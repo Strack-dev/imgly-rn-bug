@@ -12,6 +12,8 @@ const App = () => {
         visible={true}
         video={require('./assets/video_sample.mp4')}
         onExport={result => console.log(result)}
+        onError={error => console.log(error)}
+        onCancel={() => console.log('canceled')}
       />
     </SafeAreaView>
   );
